@@ -1,0 +1,24 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1767
+
+Former recentern.vim
+Inspired by vimscript #1228
+
+Recent.vim keeps track of files you have _written_ recently.  This is useful
+to continue work on files that are scattered around the file system.
+
+The list of filenames is persistently stored in ~/.vim/recent_files
+
+Per default, the filelist shows up at startup if no other file (or session) is loaded.
+Also a menu with commands gets installed.  You can turn these things off.
+
+To open a file of the list, several commands and options are provided to make
+use of windows and tabpages.
+
+Details can be found in the help file.
+
+Misc:
+- if there is a window for a file, it is always reused (first one found in
+  any tabpage), currently not customizable
+- files can be ignored based on autocmd-pattern
+- filenames can be highlighted based on extension
+- the file list is only updated when necessary
